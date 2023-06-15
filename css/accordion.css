@@ -1,0 +1,24 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section details{
+    width: 35%;
+    min-width: none;
+    background-color: #F19090;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border-bottom: 5px solid rgb(245, 245, 245);
+    padding:  3rem 3.5rem;;
+}
+
+section details p{
+    background-color: #F19090 ;
+    color: aliceblue;
+
+}
+@media (max-width: 1064px){
+
+}

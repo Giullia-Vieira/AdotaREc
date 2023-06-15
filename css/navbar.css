@@ -1,0 +1,95 @@
+nav{
+    margin: auto;
+    background-color:#FDE7E0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+} 
+#resp-nav-menu{
+  cursor: pointer;
+  display: none;
+}  
+#LOGO{
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #23001e;
+  margin: auto;
+}
+nav h1 {
+  color: gray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.nav-menu {
+  display: flex;
+  font-size: 15px;
+  list-style-type: none;
+  margin: auto;
+  overflow: hidden;
+  justify-content: space-around;
+  align-self: center;
+  font-family: 'Poppins', sans-serif;
+} 
+li a, .dropbtn {
+  display: inline-block;
+  color: #23001e;
+  text-align: center;
+  margin: 5px 3px 5px 3px;
+  padding: 14px 24px;
+  text-decoration: none;
+}
+#donate {
+  color: white;
+  background-color: #F19090;
+  border-radius: 0.5vw;
+  padding: 7px 14px;  
+  text-transform: uppercase;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.29em;
+  text-indent: 0.29em;  
+}
+#donate:hover{
+  color: #F19090;
+  background-color: white;
+} 
+li a:hover{
+  color: #F19090;
+}   
+.dropdown {
+  display: inline-block;
+  position: relative;
+  align-content: center;
+}  
+.dropdown:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F19090;
+  transform-origin: bottom;
+  transition: transform 0.1s ease-out;
+}  
+.dropdown:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom;
+}
+/* Estilos para telas pequenas */
+@media (max-width: 906px) {
+  .nav-menu li:not(:last-child) {
+    display: none; /* Oculta todos os itens do menu, exceto o último (#donate) */
+  }
+}
+
+/* Estilos para telas grandes */
+@media (min-width: 906px) {
+  .nav-menu li {
+    display: block; /* Exibe todos os itens do menu */
+  }
+}

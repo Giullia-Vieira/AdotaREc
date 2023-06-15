@@ -1,0 +1,121 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Header do site*/
+header {
+    background: #FDE7E0;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 20px #aaa;
+    z-index: 1000;
+}
+button {
+    align-items: center;
+    background-color: #F19090;
+    padding: 18px;
+    border-radius: 30px;
+    border-color: #F19090;
+    font-size: 1rem;
+    transition: all .3s ease-in-out;
+    margin-right: 65px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+#sobre-adota-rec (max-widht: 806px){
+    overflow: hide 
+}
+#app-carrossel (max-widht: 806px){
+    overflow: hide 
+}
+#accordion (max-widht: 806px){
+    overflow: hide 
+}
+div.cont {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: auto;
+    align-self: center;
+}
+#reverse {
+    flex-direction: row-reverse;
+}
+#button-clientes {
+    color: #FDE7E0;
+    background-color: #F19090;
+    border-radius: 0.5vw;
+    padding: 7px 14px;
+    text-decoration: none;
+    font-size: small;
+    text-transform: uppercase;
+    letter-spacing: 0.29em;
+    text-indent: 0.29em;
+}
+#button-clientes:hover {
+    color: black;
+    background-color: #e66868;
+}
+.text {
+    align-self: center;
+}
+#Topicos {
+    text-align: center;
+    font-size: 120%;
+    margin-top: 10vh;
+}
+#Topicos p {
+    margin-left: 15%;
+    margin-right: 15%;}
+#Topicos h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #F19090;
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+#Topicos img {
+    margin-top: 5%;
+}
+#footer_content {
+    background-color: #F19090;
+    display: inline-block;
+    padding: 3rem 3.5rem;
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    width: 100%;
+    color: aliceblue;
+    align-items: center;
+}
+#footer_contacts h3 {
+    margin-bottom: 0.75rem;
+    list-style: none;
+}
+@media (max-width: 906px) {
+    div.cont,
+    .cont,
+    #reverse {
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+        flex-direction: column;
+}
+img {
+        align-self: center;
+        max-width: 100%;
+}
+.cont img {
+    width: 100vw;
+    }
+}

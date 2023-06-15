@@ -1,0 +1,198 @@
+<Doctype!>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="favicon" sizes="16x16" href="../image/iconlogo.PNG">
+    <title>Entre em contato!</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F19090;
+      }
+    
+      h1 {
+        text-align: center;
+        display: inline;
+        margin-bottom: 50px;
+        margin-top: 50px;
+      }
+    
+      .container {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+      }
+    
+      .form-image {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: antiquewhite;
+        padding: 1rem;
+      }
+    
+      .form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: aliceblue;
+        padding: 2rem;
+      }
+    
+      .form-header {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
+    
+      .form-header h1::after {
+        content: '';
+        display: block;
+        width: 7rem;
+        height: 0.2rem;
+        background-color: #F19090;
+        margin: 0 auto;
+        position: absolute;
+        border-radius: 10px;
+        margin-bottom: 100px;
+      }
+    
+      .input-box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+      }
+    
+      .input-box input {
+        margin: 0.6rem 0;
+        padding: 0.8rem 1.2rem;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 6px wheat;
+      }
+    
+      .input-box input:hover {
+        background-color: bisque;
+      }
+    
+      .enviar-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+      }
+    
+      .enviar-button button {
+        width: 80%;
+        border: none;
+        background-color: #F19090;
+        padding: 0.62rem;
+        border-radius: 5px;
+        cursor: pointer;
+        align-items: center;
+      }
+    
+      .enviar-button button:hover {
+        background-color: #F19099;
+      }
+    
+      .enviar-button button a {
+        text-decoration: none;
+        font-size: 0.93rem;
+        font-weight: 500;
+        color: aliceblue;
+      }
+    
+      @media screen and (max-width: 1366vh) {
+        .form-image {
+          display: none;
+        }
+    
+        .container {
+          width: 90%;
+        }
+    
+        .form {
+          width: 100%;
+        }
+      }
+      @media screen and (min-width: 1024px) {
+  .container {
+    width: 100vh;
+    flex-wrap: nowrap;
+  }
+
+  .form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 1rem;
+  }
+
+  .form {
+    width: 50%;
+  }
+}
+
+  </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="form-image">
+          <img src="../image/Capturar.PNG">
+          </div>
+          <div class="form">
+            <form action="#">
+              <div class="form-header">
+                <div class="title">
+                  <h1>Fale conosco!</h1>
+                <div class="input-group">
+        
+                  <div class="input-box">
+                    <label for="Nome">Nome</label>
+                    <input id="Nome" type="text" name="Nome" placeholder="Digite seu nome" required>
+                  </div>
+                  <div class="input-box">
+                    <label for="Sobrenome">Sobrenome</label>
+                    <input id="Sobrenome" type="text" name="Sobrenome" placeholder="Digite seu sobrenome" required>
+                    </div>
+        
+                   <div class="input-box">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+                   </div>
+        
+                   <div class="input-box">
+                    <label for="Mensagem">Mensagem</label>
+                    <input id="Mensagem" type="text" name="Mensagem" placeholder="Digite sua mensagem" required>
+                   </div>
+        <div class="enviar-button">
+          <button> <a href="#">Enviar</a></button>
+        </div>
+                </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          </div>
+</body>
